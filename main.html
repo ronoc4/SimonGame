@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Simon Game</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <!-- Local files -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+
+    <div class="box">
+        <div class="boxIn">
+            <div class="topColors">
+                <div class="color leftG green">
+                    <audio id="greenSound" preload="auto">
+                        <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+                    </audio>
+                </div>
+                <div class="color rightR red">
+                    <audio id="redSound" preload="auto">
+                        <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+                    </audio>
+                </div>
+            </div>
+            <div class="bottomColors">
+                <div class="color leftY yellow">
+                    <audio id="yellowSound" preload="auto">
+                        <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+                    </audio>
+                </div>
+                <div class="color rightB blue">
+                    <audio id="blueSound" preload="auto">
+                        <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <div class="centerBox">
+            <h1 id="titleBrand">
+                Simon
+            </h1>
+            <div class="rw">
+                <div class="mainDisplay">
+                    <div class="countBox click ledOff" id="led">---</div>
+                    <h2 class="label">Round</h2>
+                </div>
+                <div class="btn1">
+                    <div class="circle circleRed click" id="redBtn"></div>
+                    <h2 class="label"> Start</h2>
+                </div>
+                <div class="btn1">
+                    <div class="circle click" id="yellowBtn"></div>
+                    <h2 class="label"> Strict</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
